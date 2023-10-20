@@ -12,7 +12,7 @@ async function run() {
 
     // Get Hotfix tag
     const isHotfix = core.getInput('hotfix', { required: false }) === false;
-    const currentLatestTag = core.getInput('latest_latest_tag', { required: false });
+    const currentLatestTag = core.getInput('latest_tag', { required: false });
 
     // Get the inputs from the workflow file: https://github.com/actions/toolkit/tree/master/packages/core#inputsoutputs
     const tagName = core.getInput('tag_name', { required: true });
